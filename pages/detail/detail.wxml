@@ -1,0 +1,17 @@
+<!--pages/detail/detail.wxml-->
+   
+      <view class="search-box">
+        <input class="search-input" placeholder="搜索" value="{{value}}" bindinput="searchInput" />
+        <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+        <text class="search-btn" wx:if="{{showResult}}" bindtap="cancelSearch">取消</text>
+    </view>
+    <view class="view-bt">
+     <button bindtap ="bt" type="primary">扫码 </button></view>
+   
+  <map id="map" scale="10" controls="{{controls}}" markers="{{markers}}" bindmarkertap="markertap" show-location longitude='{{centerX}}' latitude='{{centerY}}' class='mapv'>
+</map>
+
+ 
+
+
+

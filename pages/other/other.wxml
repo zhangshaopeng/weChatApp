@@ -1,0 +1,7 @@
+<!--pages/other/other.wxml-->
+<view> {{ message }} </view>
+<view class="common"> 
+<button class="bootview">hhh</button>
+ <text class="userinfo-other">{{msg}}</text>
+ </view>
+

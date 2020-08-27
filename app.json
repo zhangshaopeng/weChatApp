@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/find/find",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/other/other",
+    "pages/join/join",
+    "pages/login/login"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#ff9400",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eeefff"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff9400",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "iconPath": "images/newhome_home_normal.png",
+        "selectedIconPath": "images/newhome_home_checked.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"  
+      },
+      {
+        "iconPath": "images/newhome_infor_normal.png",
+        "selectedIconPath": "images/newhome_infor_checked.png",
+        "pagePath": "pages/find/find",
+        "text": "发现"
+      },
+      {
+        "iconPath": "images/newhome_my_normal.png",
+        "selectedIconPath": "images/newhome_my_checked.png",
+        "pagePath": "pages/login/login",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 60000,
+    "uploadFile": 6000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

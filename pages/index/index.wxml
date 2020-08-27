@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  </view> -->
+<!-- <scroll-view> -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image bindtap='banner' src="{{item}}" class="slide-image" width="355" height="150" data-index='{{index}}' />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='items-list'>
+  <!--定义数据来源，绑定待机事件toDetail，设置点击位置index  -->
+  <view class='pro-item' wx:for="{{prolist}}" bindtap='toDetail' data-index='{{index}}'>
+    <image class='pro-logo' src='{{item.logo}}'></image>
+    <view class='pro-body'>
+      <view class='pro-title'>{{item.title}} </view>
+      <text class='pro-desc'>{{item.desc}}</text>
+      <view class='pro-footer'>
+        <image class='pro-detail' bindtap='toData' data-index='{{index}}' src='http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'></image>
+      </view>   
+    </view>
+    <view>
+         <button bindtap='bt' class='pro-other' type ="primary" data-index='{{index}}'>添加
+        </button>
+        </view>
+  </view>
+  
+</view>
+<!-- </scroll-view> -->
+
+<!-- <map bindmarkertap="markertap" longitude="广州经度" latitude="广州纬度"></map>
+
+<button bindtap="clickMe">点击我</button> -->

@@ -1,0 +1,13 @@
+/* pages/other/other.wxss */
+.userinfo-other {
+  color: #aaa;
+  margin-top: 200px;
+}
+.common {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bootview{
+margin: 100px
+}
