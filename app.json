@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/mine/mine",
+    "pages/index/index",
     "pages/find/find",
     "pages/logs/logs",
     "pages/detail/detail",
@@ -16,7 +16,7 @@
   },
   "window": {
     "enablePullDownRefresh": true,
-    "backgroundTextStyle": "black",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ff9400",
     "navigationBarTitleText": "首页",
     "navigationBarTextStyle": "black",
