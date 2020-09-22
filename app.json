@@ -56,6 +56,10 @@
     "uploadFile": 6000,
     "downloadFile": 10000
   },
+  "rules":[{
+    "action": "allow",
+    "page": "*"
+  }],
   "debug": true,
   "sitemapLocation": "sitemap.json"
 }
